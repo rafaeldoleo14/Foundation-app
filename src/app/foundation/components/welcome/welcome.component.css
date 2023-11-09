@@ -1,0 +1,122 @@
+
+.welcome-container{
+  padding: 30px 10%;
+  display: flex;
+  gap: 20em;
+}
+
+.welcome-text{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  /* background-color: coral; */
+  width: 23em;
+  height: 100%;
+}
+
+.welcome-text p:nth-child(1){
+  color: #27b2f4;
+}
+
+.welcome-text p:nth-child(3){
+  color: #848694;
+  text-align: justify;
+  line-height: 30px;
+}
+
+.welcome-text h1{
+  font-size: 3.2em;
+  color: var(--secondary-color);
+}
+
+.welcome-text a{
+  text-decoration: none;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 15px 25px;
+  border-radius: 5px;
+  transition: all 0.4s ease;
+}
+
+.welcome-text a:hover{
+  transform: scale(1.2);
+  background-color: var(--main-color);
+}
+
+.welcome-img{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  right: 20%;
+  background-color: #ece7da;
+  width: 25em;
+  height: 70%;
+  z-index: 1;
+}
+
+.welcome-img img{
+  position: absolute;
+  bottom: 10px;
+  width: 350px;
+}
+
+.welcome-img-msg{
+  position: absolute;
+  right: -5em;
+  background-color: #27b2f4;
+  height: 18em;
+  width: 13.5em;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 12%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 30px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+}
+
+.welcome-img-msg p:nth-child(1){
+  line-height: 30px;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 700;
+  width: 70%;
+}
+
+.welcome-img-msg p:nth-child(2){
+  display: flex;
+  gap: 5px;
+  cursor: pointer;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 1em;
+  width: 40%;
+  padding-bottom: 5px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.384);
+  transition: all 0.4s ease;
+}
+
+.welcome-img-msg p:nth-child(2):hover{
+  width: 50%;
+  border-bottom: 2px solid white;
+}
+
+.welcome-img-msg p i{
+  transition: all 0.4s ease;
+}
+
+.welcome-img-msg p i:hover{
+  transform: translateX(10px);
+}
+
+.hidden-img{
+  display: none;
+}
+
+
+
+

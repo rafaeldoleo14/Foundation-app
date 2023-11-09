@@ -1,0 +1,11 @@
+
+div{
+  position: absolute;
+  width: calc(100% - 30px);
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+h1{
+  color: var(--main-color);
+}

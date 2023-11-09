@@ -1,0 +1,53 @@
+
+<header>
+
+  <nav >
+
+    <div class="logo-container">
+      <img src="../../../assets/img/logoFoundation.png" alt="">
+
+      <div>
+
+        <h2>Fundación</h2>
+        <p>GRANITO DE ARENA</p>
+
+      </div>
+
+    </div>
+
+    <div class="nav-container">
+
+      <a routerLink="/foundation" [routerLinkActiveOptions]="{exact: true}"
+      routerLinkActive="active">Inicio</a>
+
+      <a>About US</a>
+      <a>Inicio</a>
+      <a>Catalogo</a>
+
+    </div>
+
+    <div class="social-container">
+
+      <div *ngFor="let item of menuItems">
+        <i class={{item.icon}} ></i>
+      </div>
+
+    </div>
+
+    <div class="panel-menu" [ngStyle]="{'left': isHidden ? '-10000px' : '0px'}">
+
+      <app-nav-panel></app-nav-panel>
+
+    </div>
+
+    <div class="btn-menu" (click)="onHidden()">
+
+      <i *ngIf="isHidden" class="bi bi-list"></i>
+
+      <i *ngIf="!isHidden" class="bi bi-x" style="font-size: 2.6em;"></i>
+
+    </div>
+
+  </nav>
+
+</header>
